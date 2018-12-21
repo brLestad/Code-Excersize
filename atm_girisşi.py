@@ -8,7 +8,7 @@ ATM GİRİŞİ
 
 3. PARA YATIRMA
 
-Programdan çıkmak için 'q' ya basınız.
+4. PROGRAMDAN ÇIKIŞ
 ****************
 """)
 
@@ -17,7 +17,7 @@ bakiye = 5000
 while True:
     islem = int(input("İŞLEM SEÇİNİZ: "))
 
-    if (islem == "q"):
+    if (islem == 4):
         print("İYİ GÜNLER DİLERİZ :) ")
         break
 
@@ -40,4 +40,6 @@ while True:
     else:
         print("GEÇERSİZ İŞLEM GİRDİNİZ.")
         break
+
+
 
