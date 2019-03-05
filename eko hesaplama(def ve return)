@@ -1,0 +1,31 @@
+#KULLANILABİLİRLİK=(PLANLANMAMIŞ ÜRETİM SÜRESİ-PLANSIZ DURUŞ)/PLANLANMIŞ ÜRETİM SÜRESİ))
+#PERFORMANS=(STANDART ÇEVRİM ZAMANI*ÜRETİM MİKTARI)/(PLANLANMIŞ ÜRETİM MİKTARI-PLANSIZ DURUŞ)
+#KALİTE=(SAĞLAM ÜRÜN MİKTARI/TOPLAM ÜRÜN MİKTARI)
+#EKİPMAN KULLANILABİLİRLİK ORANI=(KULLANILABİLİRLİK*PERFORMANS*KALİTE*%100)
+
+#1.TANIMLAMALAR
+def kullan(puns,pd,pus):
+    kul=(puns-pd/pus)
+    return kul
+def perfor(scz,um,pus,pd):
+    perf=(scz*um)/(pus*pd)
+    return perf
+def kalite(sum,tum):
+    kalit=(sum/tum)
+    return kalit
+def ekipman(kullan,perfor,kalite):
+    ekip=(kullan*perfor*kalite/100)
+    return ekip
+
+puns=int(input("PLANLANMAMIŞ ÜRETİM SÜRESİ: "))
+pd=int(input("PLANSIZ DURUŞ: "))
+pus=int(input("PLANLANMIŞ ÜRETİM SÜRESİ: "))
+scz=int(input("STANDART ÇEVRİM ZAMANI: "))
+um=int(input("ÜRETİM MİKTARI: "))
+sum=int(input("SAĞLAM ÜRÜN MİKTARI: "))
+tum=int(input("TOPLAM ÜRÜN MİKTARI: "))
+
+a=kullan(puns,pd,pus)
+b=perfor(scz,um,pus,pd)
+c=kalite(sum,tum)
+print("EKİPMAN KULLANILABİLİRLİK ORANI: ",ekipman(a,b,c))
