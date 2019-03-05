@@ -1,0 +1,9 @@
+def üclecarp(a):
+    print("fonksiyon çalıştı")
+    return a * 3
+def besletopla(a):
+    print("fonksiyon çalıştı")
+    return a + 5
+def ikiyebol(a):
+    print("fonksiyon çalıştı")
+    return a / 2
