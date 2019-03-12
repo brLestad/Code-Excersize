@@ -8,8 +8,8 @@ dolap=350
 def donem_basi_stok(koltuk,yatak,dolap):
     donemS=(koltuk+yatak+dolap)
     return donemS
-def donem_sonu_stok(donem_basi_stok,Ksatilanlar,Ysatilanlar,Dsatilanlar):
-    donemSon=(donem_basi_stok-(Ksatilanlar+Ysatilanlar+Dsatilanlar))
+def donem_sonu_stok(donem_basi_stok,Ksatilanlar,Ysatilanlar,Dsatilanlar,uretilen):
+    donemSon=(donem_basi_stok+uretilen-(Ksatilanlar+Ysatilanlar+Dsatilanlar))
     return donemSon
 def donem_ortalamasi(donem_sonu_stok,donem_basi_stok):
     donemOrt=((donem_sonu_stok+donem_basi_stok)/2)
@@ -18,9 +18,10 @@ def donem_ortalamasi(donem_sonu_stok,donem_basi_stok):
 Ysatilanlar=int(input("Yatak satışı: "))
 Ksatilanlar=int(input("Koltuk satışı: "))
 Dsatilanlar=int(input("Dolap satışı: "))
+uretilen=int(input("Üretilen Toplam Ürün: "))
 
 a=donem_basi_stok(koltuk,yatak,dolap)
-b=donem_sonu_stok(a,Ksatilanlar,Ysatilanlar,Dsatilanlar)
+b=donem_sonu_stok(a,Ksatilanlar,Ysatilanlar,Dsatilanlar,uretilen)
 
 print("Dönem başı stok: ",a)
 print("Dönem sonu stok: ",b)
