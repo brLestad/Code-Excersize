@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<head>
+<title>GAMING STORE</title>
+<meta charset="UTF-8"/>
+<meta name="Description" content="Bu site gamerların ihtiyacı olan her şeyi barıdırmaktadır."/>
+<meta name="Keywords" content="Game,Mouse,Mousepad,Keyboard,Computer,Laptop,Türkiye"/>
+<meta name="googlebot" content="noarchive"/>
+<meta name="Revisit-After" content="1 days"/>
+<meta name="robots" content="index,hakkimizda"/>
+<meta name="copyright" content="2019 Gamıng Store"/>
+</head>
+<body>
+<p>Bu bir paragraftır.</p>
+<p>Gamıng store oyuncu mağazası</p>
+<pre>Gamıng          Oyuncu Malzemeleri Mağazası</pre>
+<h1>GAMING</h1>
+<h2>GAMING</h2>
+<abbr title="GAMING STORE OYUNCU MAĞAZASI">GSOM</abbr>
+<p>H<sub>2</sub>O</p>
+<p>X<sup>3</sup>+Y</P>
+<p><b>GAMING STORE 10. YILINI KUTLUYOR</b></p>
+<p><strong>GAMING STORE 10. YILINI KUTLUYOR</strong></p>
+<p><strong><em>GAMING STORE 10. YILINI KUTLUYOR</em></strong></p>
+<p><br><b>Lorem Ipsum, dizgi ve baskı endüstrisinde kullanılan mıgır metinlerdir.</b></br><br> 
+Lorem Ipsum, adı bilinmeyen bir matbaacının bir hurufat numune kitabı oluşturmak 
+üzere bir yazı galerisini alarak karıştırdığı 1500'lerden beri endüstri standardı 
+sahte metinler olarak kullanılmıştır.</br><br><q>Beşyüz yıl boyunca</q> varlığını sürdürmekle kalmamış, 
+aynı zamanda pek değişmeden elektronik dizgiye de sıçramıştır.</br><br> 
+1960'larda <code>Lorem Ipsum</code> pasajları da içeren Letraset yapraklarının yayınlanması 
+ile ve yakın zamanda Aldus PageMaker gibi Lorem Ipsum sürümleri içeren masaüstü 
+yayıncılık yazılımları ile popüler olmuştur.</br></p>
+
+
+
+
+</body>
+</html>
