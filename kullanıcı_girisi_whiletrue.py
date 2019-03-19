@@ -5,7 +5,7 @@ KULLANICI GİRİŞİ PROGRAMI
 """)
 
 sys_kullanıcı_adi = "muhiddinkaymak"
-sys_sifre = "2120608"
+sys_sifre = "2124545"
 giris_hakki = 3
 
 while True:
