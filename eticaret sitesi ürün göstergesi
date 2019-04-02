@@ -1,0 +1,18 @@
+#1-SORU=>e ticaret sitelerine beraber çok satılan ürünler göstergesi müşterilerin satın alma davranışlarını ortaya koyması açısından önem arz etmektedir. Bu gösterge kullanılarak sitede
+#ilgili alanlarda ziyaretçilere öneriler sunmanıza yardımcı olmaktadır. Örneğin bir aksesuar sitesi için çanta ve ayakkabı beraber satın alınan ürünler arasında olabilir.
+#Bu kapsamda bu göstergeyi hesaplayan python uygulamasını yazınız.
+#KULLANILACAKLAR=>listeler, while, if/else ve input() kullanılacaktır.
+
+
+urunler=[]
+while True:
+    urun=input("Satın alınan/bakılan ürün ")
+    urunler.append(urun)
+    if urunler.count("Ayakkabı")>3:
+        print("Önerilen ürün: Çanta")
+        continue
+    elif urunler.count("TV")>3:
+        print("Önerilen ürün: Ses sistemi")
+        continue
+    elif urun=="q":
+        break
