@@ -1,0 +1,39 @@
+<!DOCKTYPE html>
+<head>
+
+<title>YBS Dokuz Eylül</title>
+<meta charset ="UTF-8">
+
+</head>
+
+<body>
+
+<form method="POST" action="kayit.php">
+<label for="adi">KULLANICI ADINIZ: </label>
+<input id="adi" type="text"><br>
+<label for="sifre">SIFRENIZ:</label>
+<input id="sifre" type="password"><br>
+<input id="robot" type="checkbox" checked>
+<label>ERKEK</label>
+<input id="sec" name="sec" type="radio" value="erkek">
+<label>KADIN</label>
+<input id="sec" name="sec" type="radio" value="kadin"><br>
+<textarea cols="10" rows="10" ></textarea>
+<select name="dogumyeri" id="dogumyeri">
+	<option value="Tokat">Tokat</option>
+	<option value="izmir">izmir</option>
+	<option value="amasya">Amasya</option>
+</select>
+<input type="date">
+<input type="color"> 
+<input type="gmail">
+<input type="number" min="1" max="10" value="5">
+<input type="range" min="1" max="100" step="1" value="10">
+
+<input id="gonder" type="submit" value="Gonder">
+<input type="reset" value="Temizle">
+</form>
+
+</body>
+
+</html>
