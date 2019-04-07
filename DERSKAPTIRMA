@@ -1,0 +1,30 @@
+#kaptırma oranı:çrvirmiçi bir perakendeci için kaptırma oranı müşterilerin markanızdan ne kadar hızlı sürede ayrıldığını söyleyen göstergedir.
+#kaptırma oranını hesaplayan bir pyton uygulaması yazınız.
+#Kullanılacaklar:Listeler,fonksiyon,input,while
+
+musteriler=[]
+Cikanmusteri=[]
+
+while True:
+    print("Abone olmak için:'K' Çıkmak için 'Ç' basınız.")
+    islem=input("İşlem giriniz: ")
+    if islem=="K":
+        musteriler.append(islem)
+        def oran(musteriler,Cikanmusteri):
+            oran=Cikanmusteri/(musteriler+Cikanmusteri)
+            return oran
+        x=len(musteriler)
+        y=len(Cikanmusteri)
+        o=oran(x,y)
+        print("Gelen müşteri sayısı:",x,"Çıkan müşteri sayısı: ",y,"Kaptırma oranı: ",o)
+    else:
+        Cikanmusteri.append(islem)
+        def oran(musteriler,Cikanmusteri):
+            oran=Cikanmusteri/(musteriler+Cikanmusteri)
+            return oran
+        x=len(musteriler)
+        y=len(Cikanmusteri)
+        o=oran(x,y)
+        print("Gelen müşteri sayısı:", x, "Çıkan müşteri sayısı: ", y, "Kaptırma oranı: ", o)
+
+
