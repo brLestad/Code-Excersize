@@ -5,14 +5,25 @@
 
 
 urunler=[]
+aranan_urunler=""
+
 while True:
-    urun=input("Satın alınan/bakılan ürün ")
-    urunler.append(urun)
-    if urunler.count("Ayakkabı")>3:
-        print("Önerilen ürün: Çanta")
+    aranan_urunler=input("Aradığınız urunler: ")
+    urunler.append(aranan_urunler)
+    if aranan_urunler=="ayakkabı":
+        if urunler.count("ayakkabı")>3:
+            print("Önerilen ürün: çorap")
         continue
-    elif urunler.count("TV")>3:
-        print("Önerilen ürün: Ses sistemi")
+    elif aranan_urunler=="bere":
+        if urunler.count("bere")>2:
+            print("Önerilen urun: şapka")
         continue
-    elif urun=="q":
+    elif aranan_urunler=="kazak":
+        if urunler.count("kazak")>2:
+            print("Önerilen ürün: atkı")
+        continue
+    elif aranan_urunler=="q":
         break
+
+
+    
