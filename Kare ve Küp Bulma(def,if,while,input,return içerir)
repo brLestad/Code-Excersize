@@ -1,0 +1,18 @@
+while True:
+    print("Kare ve Küp alma programına hoş geldiniz.")
+    print("-"*30)
+    deger=int(input("Kare bulmak istiyorsanız '1'e Küp bulmak istiyorsanız '2'ye basın."))
+    if (deger==1):
+        kare=int(input("Karesi alınacak sayıyı giriniz"))
+        def kareal(kare):
+            return kare**2
+        print("Sayınızın karesi:",kareal(kare))
+    elif (deger==2):
+        kup=int(input("Küpü alınacak sayıyı giriniz"))
+        def kupal(kup):
+             return kup**3
+        print("Sayınızın kübü:",kupal(kup))
+            
+    else:
+        print("Lütfen tekrar deneyiniz.")
+            
