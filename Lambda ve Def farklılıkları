@@ -1,0 +1,6 @@
+fonksiyon=lambda sayı % 2 ==0
+print(fonskiyon(25)) #BURADA LAMBDA İLE YAPILMIŞ BİR ÇİFT TEK FONKSİYONU VARDIR. ÇIKTI OLARAK FALSE VERECEKTİR.
+
+def fonksiyon(sayı):
+    return sayı % 2 == 0
+print(fonskiyon(24)) #BURADA DA DEF FONKİSYONU İLE YAPILAN ÇİFT TEK FONKSİYONU VARDIR. ÇIKTI OLARAK TRUE VERECEKTİR.
