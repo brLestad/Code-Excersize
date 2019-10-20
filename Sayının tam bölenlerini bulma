@@ -1,0 +1,19 @@
+def tambolenleribulma(sayı):
+    tambolenlerliste=[]
+
+    for i in range(2,sayı):
+
+
+        if (sayı%i==0):
+            tambolenlerliste.append(i)
+            
+    return tambolenlerliste
+
+while True:
+    sayı = input("Sayı giriniz. Çıkmak için 'q' ya basın")
+
+    if (sayı =="q"):
+        break
+    else:
+        sayı = int(sayı)
+        print("Tam bölenler:",tambolenleribulma(sayı))
