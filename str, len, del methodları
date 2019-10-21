@@ -1,0 +1,20 @@
+class kitap():
+    def __init__(self,isim,yazar,tur,sayfa):
+        print("İnit fonksiyonu çalışıyor")
+        self.isim = isim
+        self.yazar = yazar
+        self.tur = tur
+        self.sayfa = sayfa
+    def __str__(self):
+        return "İsim: {}\nYazar: {}\nTür:{}\nSayfa sayısı:{}".format(self.isim,self.yazar,self.tur,self.sayfa)
+    def __len__(self):
+        return self.sayfa
+    def __del__(self):
+        print("Kitap objesi siliniyor")
+        
+        
+
+kitap = kitap("Hitlere sordunuz mu?","Atakan büyükadğ","Tarih",276)
+print(kitap)
+print(len(kitap))
+del kitap
