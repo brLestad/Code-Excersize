@@ -1,0 +1,37 @@
+class calisan():
+    def __init__(self,isim,maas,departman):
+        print("Çalışan sınıfı init fonksiyonu")
+
+        self.isim = isim
+        self.maas = maas
+        self.departman = departman
+    def bilgilerigoster(self):
+        print("Çalışan sınıfı bilgileri")
+
+        print("İsim: {}\nMaaş: {}\nDerpartman: {}\n".format(self.isim,self.maas,self.departman))
+
+    def departmandegistir(self,yenidepartman):
+        self.departman = yenidepartman
+
+class yonetici(calisan):
+    def __init__(self,isim,maas,departman,kisisayisi):
+        print("Yönetici sınıfının init fonksiyonu")
+        
+        self.isim = isim
+        self.maas = maas
+        self.departman = departman
+        self.kisisayisi = kisisayisi
+    def bilgilerigoster(self):
+        print("Yönetici sınıfı bilgileri")
+
+        print("İsim: {}\nMaaş: {}\nDerpartman: {}\nSorumlu kişi sayısı: {}\n".format(self.isim,self.maas,self.departman,self.kisisayisi))
+
+        
+    def zamyap(self,yenizam):
+        self.maas+=yenizam
+        print("Zam yapıldı")
+
+yönetici = yonetici("Ahmet",8500,"Yönetici",45)
+yönetici.bilgilerigoster()
+çalışan = calisan("Sercan",8500,"Bilişim")
+çalışan.bilgilerigoster()
