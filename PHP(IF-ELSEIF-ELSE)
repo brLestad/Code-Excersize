@@ -1,0 +1,17 @@
+<?php
+
+$sayfa = @$_GET{"sayfa"};
+
+echo '<a href="index.php?sayfa=hakkimda">Hakkımda</a> / <a href="index.php?sayfa=iletisim">İletişim</a> / <a href="index.php?sayfa=referanslar">Referanslar</a>';
+
+if ($sayfa == "hakkimda") {
+	echo "<h1>Hakkımda</h1><p>Ben bir garip keloğlanım eşeğimdir varım yoğum</p>";
+}elseif($sayfa =="iletisim"){
+	echo "<h1>İletişim</h1><p>Benimle iletişime geçmek isteyenler <a href='mailto:muhiddinkaymak@hotmail.com'>muhiddinkaymak@hotmail.com</a>'a mail atabilirler</p>";
+}elseif ($sayfa =="referanslar"){
+	echo "<h1>Referanslar</h1><p>Referanslar yakında sayfaya eklenecektir.</p>";
+}else {
+	echo "<P>YANLIŞ BİR SAYFADASINIZ ÇIKMANIZ SİZİN İÇİN İYİ OLACAKTIR.</P>";
+}
+
+?>
