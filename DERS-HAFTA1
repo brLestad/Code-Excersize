@@ -1,0 +1,23 @@
+from PyQt5.QtWidgets import *
+#Obje oluşturma satırları
+def metniguncelle():
+    print("Who want to be king?")
+def metniguncelle2():
+    print("I'm the King!")
+etiket=QWidget()
+etiket=QLabel('<font color="red" size="+9">Hello Ragnar Lothbrok</font>')
+dugme=QPushButton("Gönder") #Gönder butonu oluşturduk
+dugme2=QPushButton("Temizle") #Temzile butonu oluşturduk
+dugme.clicked.connect(metniguncelle) #Gönder düğmesinin etkileşimli hale gelmesini sağladık
+dugme2.clicked.connect(metniguncelle2) #Temizle düğmesinin etkileşimli hale gelmesini sağladık.
+izgara=QGridLayout() #Izgara layout oluşturduk.
+#Objeleri çalıştırma satırları
+izgara.addWidget(etiket,0,0) #etiket kısmını Izgaraya ekledik ve 0.satır 0.sütun olmasını istedik.
+izgara.addWdiget(dugme,1,0,1,1) #dugme kısmını Izgaraya ekledik ve 1.satır 0.sütundan oluşmasını ve 1 sütun ile 1 satıra yayılmasını istedik.
+izgara.addWidget(dugme2,1,1,1,1) #dugme2 kısmının ızgaraya ekledik ve 1.satır 1.sütundan oluşmasını istedik ve 1 sütun ile 1 satıra yayılmasını istedik.
+pencere=Qwidget
+pencere.setLayout(izgara)
+pencere.setWindowTitle("Yazı değiştirme uygulaması") #pencere başlığı oluşturduk.
+app=QApplication([]) #uygulamayı aktif hale getirdik
+pencere.show() #pencereyi açma komutu
+app.exec_() #uygulama çalıştırma komutu
